@@ -1,9 +1,16 @@
-*{
+* {
     text-align: center;
 }
 
-#cor{
-    margin-left: 42.5%;
-    width: 200px;
-    height: 200px;
+html,
+body {
+    height: 100%;
+}
+
+#cor {
+    padding-top: 30px;
+    margin-left: 33.3%;
+    width: 33.3%;
+    height: 33.3%;
+    border: 1px solid black;
 }

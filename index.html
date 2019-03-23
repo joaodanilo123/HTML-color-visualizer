@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Color View</title>
 </head>
+
 <body>
-    <div id='cor'></div>
-    <input type="range" max="255" id="r"><br>
-    <input type="range" max="255" id="g"><br>
-    <input type="range" max="255" id="b"><br>
+    <div id='cor'></div><br>
+    <input type="range" max="255" id="r" oninput="updateColor(red,green,blue)"><br>
+    <input type="range" max="255" id="g" oninput="updateColor(red,green,blue)"><br>
+    <input type="range" max="255" id="b" oninput="updateColor(red,green,blue)"><br>
     <script src="script.js"></script>
 </body>
+
 </html>
