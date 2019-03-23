@@ -3,45 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>select Color</title>
-    <style>
-    
-    *{
-        text-align: center;
-    }
-
-    #cor{
-        margin-left: 42.5%;
-        width: 200px;
-        height: 200px;
-    }
-    
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Color picker</title>
 </head>
 <body>
     <div id='cor'></div>
     <input type="range" max="255" id="r"><br>
     <input type="range" max="255" id="g"><br>
     <input type="range" max="255" id="b"><br>
-
-    <script>
-    
-var cor = document.getElementById('cor')
-var red = document.getElementById('r')
-var green = document.getElementById('g')
-var blue = document.getElementById('b')
-
-async function updateColor(r,g,b) {
-    let color = "rgb("+r.value+","+ g.value +","+b.value+")"
-
-    cor.style.backgroundColor = color
-
-    console.log(color)
-}
-
-setInterval(updateColor,1,red,green,blue)
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
